@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>forms_page</title>
+    <link rel="stylesheet" href="styleforms.css">
+</head>
+
+<body>
+    <form action="inicial.html" id="formulario">
+
+        <div id="info_user">
+            <h2>formulario</h2>
+            <input type="text" name="user" id="user" placeholder="insira o nome de usuario" required>
+            <br>
+            <input type="email" name="email_user" id="email" placeholder="insira um email" required>
+            <br>
+            <input type="password" name="senha" id="senha" placeholder="insira a senha" required>
+            <br>
+        </div>
+
+        <fieldset id="opt_sexo">
+            <legend>sexo</legend>
+
+            <label for="masculino">
+                <input type="radio" name="sexo" id="masc" value="masculino" required>Masculino
+            </label>
+
+            <label for="femino">
+                <input type="radio" name="sexo" id="fem" value="feminino">Feminino
+            </label>
+
+            <label for="outros">
+                <input type="radio" name="sexo" id="outro" value="outro">não declarar
+            </label>
+
+        </fieldset>
+
+        <input type="submit" value="enviar" id="envio"><br>
+        <a href="inicial.html"><button type="button" id="voltar">Voltar para Início</button></a>
+        
+    </form>
+    
+
+
+</body>
+
+</html>

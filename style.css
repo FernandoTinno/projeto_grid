@@ -1,0 +1,70 @@
+body{
+    background-color: black;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: aliceblue;
+}
+
+#img_container{
+    
+    display: flex;
+    justify-content: center;
+    
+}
+
+.itens{
+    display: flex;/* habilita o flex-box*/
+    flex-direction: column; /* Alinha a imagem e o texto verticalmente */
+    align-items: center; /* centraliza quais quer objetos dentro da classe itens*/
+    padding: 2rem; /* Espaçamento ao redor das imagens */
+    border-style: solid; /* deixar a borda estatica*/
+    border-color: rgb(204, 193, 193);/*permite eu escolher uma cor para a borda*/
+    width: 33.33%;/* largura em que cada conteudo vai ocupar*/
+}
+.itens:hover{
+    background-color: gray;/*quando passar o mouse por cima troca a cor*/
+}
+
+
+#img_container img{
+    width: 400px;/*ajusta a largura das imagens*/
+    height: 400px;/*ajusta a altura das imagens*/
+    margin-bottom: 0rem;/*ajusta a distancia das letras, que estão abaixo das imagens*/
+    
+}
+
+@media (max-width: 900px) { /* impoe essas condicoes caso ao site caso o dispositivo tenha mais de 600 pixels e até 900 pixels */
+    .itens {
+        display: flex;
+        width: 33.33%; /* Dois itens por linha em telas médias */
+        flex-direction: column; /*para que as escritas permanecem iguais ao site no tamanho real*/
+        
+    }
+
+    #img_container img {
+        width: 250px;
+        height: 250px;
+    }
+}
+
+@media (max-width: 600px) { /* impoe essas caracteristicas para o site caso tenha no maximo 600 pixels*/
+    .itens {
+        display: flex;
+        width: 33.33%;
+        flex-direction: column;
+        
+    }
+
+    #img_container img {
+        width: 100px;
+        height: 100px;
+    }
+}
+
+
+
+
+
+
+
+    
+    
