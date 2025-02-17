@@ -25,6 +25,15 @@ body {
     margin-bottom: 3rem;
 }
 
+#conteudo_flex{
+    text-align: justify;
+}
+
+#conteudo_flex h2{
+    text-align: center;
+    
+}
+
 
 
 #voltar:hover {
